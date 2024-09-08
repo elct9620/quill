@@ -10,3 +10,9 @@ The stock portfolio management system for TW Stock Market. Integrate with Fugle 
 * [ ] Remove a stock from the portfolio
 * [ ] Get the latest stock information
 * [ ] Sync with Finlab API Portfolio Management Data
+
+## Development
+
+* [Devbox](https://www.jetify.com/devbox) or Python 3.12
+* Poetry 1.8.3
+* Qt Creator for GUI design
