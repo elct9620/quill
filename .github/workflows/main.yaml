@@ -17,14 +17,14 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install poetry
         run: |
           pipx install poetry==${{ env.POETRY_VERSION }}
           pipx inject poetry poetry-plugin-export
       - name: Export poetry
         run: poetry export -f requirements.txt -o requirements.txt
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
@@ -35,13 +35,14 @@ jobs:
         with:
           script-name: main.py
           onefile: true
+          output-file: Quill
           enable-plugins: pyside6
           disable-console: true
           macos-create-app-bundle: true
 
       # Uploads artifact
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ runner.os }} Build
           path: |
