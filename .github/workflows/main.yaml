@@ -33,9 +33,8 @@ jobs:
       # Build python script into a stand-alone exe
       - uses: Nuitka/Nuitka-Action@main
         with:
-          script-name: main.py
+          script-name: Quill.py
           onefile: true
-          output-file: Quill
           enable-plugins: pyside6
           disable-console: true
           macos-create-app-bundle: true
