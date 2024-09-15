@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.12"
 PySide6 = { version="^6.7.2", python="^3.12,<3.13" }
 Nuitka = "^2.4.8"
+fugle-trade = "^1.2.0"
 
 [tool.poetry.group.dev.dependencies]
 python-lsp-server = "^1.12.0"
