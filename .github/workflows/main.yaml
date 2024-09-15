@@ -38,7 +38,6 @@ jobs:
           enable-plugins: pyside6
           disable-console: true
           macos-create-app-bundle: true
-          debug: true
 
       # Uploads artifact
       - name: Upload Artifacts
