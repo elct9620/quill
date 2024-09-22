@@ -35,11 +35,12 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'poetry'
-      - run: sudo apt update && sudo apt install -y libegl1-mesa-dev 'libxcb-*' libxkbcommon-x11-0
+      - run: sudo apt update && sudo apt install -y xvfb libegl1-mesa-dev 'libxcb-*' libxkbcommon-x11-0
       - run: poetry install
-      - run: poetry run behave
+      - run: xvfb --auto-servernum poetry run behave
         env:
           QT_DEBUG_PLUGINS: 1
+          DISPLAY: ":99"
 
   build:
     strategy:
