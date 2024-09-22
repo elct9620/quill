@@ -35,7 +35,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'poetry'
-      - run: sudo apt update && sudo apt install -y libegl1-mesa-dev libxkbcommon-x11-0
+      - run: sudo apt update && sudo apt install -y libegl1-mesa-dev libxcb-cursor0 libxkbcommon-x11-0
       - run: poetry install
       - run: poetry run behave
         env:
