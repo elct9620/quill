@@ -37,7 +37,7 @@ jobs:
           cache: 'poetry'
       - run: sudo apt update && sudo apt install -y xvfb libegl1-mesa-dev 'libxcb-*' libxkbcommon-x11-0
       - run: poetry install
-      - run: xvfb --auto-servernum poetry run behave
+      - run: xvfb-run --auto-servernum poetry run behave
         env:
           QT_DEBUG_PLUGINS: 1
           DISPLAY: ":99"
