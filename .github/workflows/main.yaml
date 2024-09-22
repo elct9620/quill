@@ -38,6 +38,8 @@ jobs:
       - run: sudo apt update && sudo apt install -y libegl1-mesa-dev libxcb-cursor-dev
       - run: poetry install
       - run: poetry run behave
+        env:
+          QT_DEBUG_PLUGINS: 1
 
   build:
     strategy:
