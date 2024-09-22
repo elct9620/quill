@@ -1,10 +1,11 @@
 [tool.poetry]
-name = "quill"
+name = "Quill"
 version = "0.1.0"
 description = ""
 authors = ["Aotokitsuruya <contact@aotoki.me>"]
 license = "Apache-2.0"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
