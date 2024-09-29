@@ -13,8 +13,6 @@ from __feature__ import snake_case, true_property  # noqa
 
 
 class MainWindow(QMainWindow):
-    ui_filename = "ui/mainwindow.ui"
-
     def __init__(self):
         super(MainWindow, self).__init__()
 

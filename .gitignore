@@ -163,7 +163,12 @@ cython_debug/
 
 # Nuitka
 *.bin
+*.dist/
+*.build/
+*.app/
+Info.plist
 nuitka-crash-report.xml
 
 # Development Tooks
 node_modules/
+
