@@ -13,8 +13,10 @@
       ". $VENV_DIR/bin/activate"
     ],
     "scripts": {
-      "test": [
-        "poetry run behave --tags ~@wip"
+      "preview": "poetry run python Quill.py",
+      "test": "poetry run behave --tags ~@wip",
+      "codegen": [
+        "pyside6-uic -o ui_mainwindow.py ui/mainwindow.ui",
       ]
     }
   }
