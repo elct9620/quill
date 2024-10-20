@@ -9,7 +9,6 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-PySide6 = { version="^6.8.0", python="^3.12,<3.13" }
 Nuitka = "^2.4.9"
 fugle-trade = "^1.2.0"
 

@@ -1,16 +1,13 @@
 all: test
 
-test: codegen
+test:
 	devbox run test
 
-codegen:
-	devbox run codegen
-
-preview: codegen
+preview:
 	devbox run preview
 
-build: codegen
-	poetry run nuitka Quill.py --standalone --plugin-enable=pyside6 --macos-create-app-bundle
+build:
+	poetry run nuitka Quill.py --standalone --macos-create-app-bundle
 
 clean:
 	rm -rf Quill.dist
