@@ -11,6 +11,7 @@ package-mode = false
 python = "^3.12"
 Nuitka = "^2.4.9"
 fugle-trade = "^1.2.0"
+pywebview = "^5.3"
 
 [tool.poetry.group.dev.dependencies]
 python-lsp-server = "^1.12.0"
