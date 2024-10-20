@@ -24,4 +24,3 @@ chmod +x Quill.app/Contents/MacOS/Quill
 
 * [Devbox](https://www.jetify.com/devbox) or Python 3.12
 * Poetry 1.8.3
-* Qt Creator for GUI design
