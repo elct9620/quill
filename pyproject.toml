@@ -8,7 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "<3.13,>=3.8"
 Nuitka = "^2.4.9"
 fugle-trade = "^1.2.0"
 pywebview = "^5.3"
