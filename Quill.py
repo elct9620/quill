@@ -18,7 +18,7 @@ def main():
         webview.start()
     else:
         webview.create_window("Quill", "http://localhost:5173")
-        webview.start()
+        webview.start(debug=True)
 
 
 if __name__ == "__main__":
