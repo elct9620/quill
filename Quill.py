@@ -4,6 +4,7 @@
 #    nuitka-project: --standalone
 # nuitka-project: --macos-create-app-bundle
 # nuitka-project: --include-data-dir={MAIN_DIRECTORY}/frontend/dist=frontend
+import os
 import webview
 
 is_compiled = "__compiled__" in globals()
@@ -11,7 +12,9 @@ is_compiled = "__compiled__" in globals()
 
 def main():
     if is_compiled:
-        webview.create_window("Quill", "frontend/index.html")
+        # NOTE: Nuitka use __file__ to get data dir path
+        index = os.path.join(os.path.dirname(__file__), "frontend/index.html")
+        webview.create_window("Quill", index)
         webview.start()
     else:
         webview.create_window("Quill", "http://localhost:5173")
