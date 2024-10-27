@@ -6,7 +6,10 @@ test:
 preview:
 	devbox run preview
 
-build:
+build-frontend:
+	npm run build -ws
+
+build: build-frontend
 	poetry run nuitka Quill.py --standalone --macos-create-app-bundle
 
 clean:
