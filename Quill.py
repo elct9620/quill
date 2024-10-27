@@ -1,3 +1,4 @@
+# nuitka-project: --include-data-dir={MAIN_DIRECTORY}/frontend/dist=frontend
 import webview
 
 is_compiled = "__compiled__" in globals()
@@ -5,7 +6,7 @@ is_compiled = "__compiled__" in globals()
 
 def main():
     if is_compiled:
-        webview.create_window("Quill", html="<h1>Working in progress</h1>")
+        webview.create_window("Quill", "frontend/index.html")
         webview.start()
     else:
         webview.create_window("Quill", "http://localhost:5173")
