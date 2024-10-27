@@ -8,7 +8,7 @@ def main():
         webview.create_window("Quill", html="<h1>Working in progress</h1>")
         webview.start()
     else:
-        webview.create_window("Quill", html="<h1>Hello, World!</h1>")
+        webview.create_window("Quill", "http://localhost:5173")
         webview.start()
 
 
