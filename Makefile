@@ -10,7 +10,7 @@ build-frontend:
 	npm run build -ws
 
 build: build-frontend
-	poetry run nuitka Quill.py --standalone --macos-create-app-bundle
+	poetry run nuitka Quill.py --standalone
 
 clean:
 	rm -rf Quill.dist
