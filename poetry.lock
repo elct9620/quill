@@ -689,13 +689,13 @@ clr-loader = ">=0.2.6,<0.3.0"
 
 [[package]]
 name = "pywebview"
-version = "5.3"
+version = "5.3.2"
 description = "Build GUI for your Python program with JavaScript, HTML, and CSS"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pywebview-5.3-py3-none-any.whl", hash = "sha256:b63916b50ec3af28642f086d44214d4339dd546ad806612b81f99da89eb3a945"},
-    {file = "pywebview-5.3.tar.gz", hash = "sha256:62b76d5b5de3aa999665f93d9e63b6f2c238d8f25bf4fa6a303dfa6411eeed79"},
+    {file = "pywebview-5.3.2-py3-none-any.whl", hash = "sha256:55f5a4bcfaa56738f2d6206977bd3d2864784249b0646c67e84f402ba1740000"},
+    {file = "pywebview-5.3.2.tar.gz", hash = "sha256:77b88a63e65e12913d269205e9c6d357666d4864826749c738bf432bd3ad23d9"},
 ]
 
 [package.dependencies]
