@@ -366,12 +366,12 @@ pycryptodome = "*"
 
 [[package]]
 name = "nuitka"
-version = "2.4.10"
+version = "2.4.11"
 description = "Python compiler with full language support and CPython compatibility"
 optional = false
 python-versions = "*"
 files = [
-    {file = "Nuitka-2.4.10.tar.gz", hash = "sha256:51f24c4dc6282225fbe601095d1a9ee1c9eda08207e8eeab63e64b1800659941"},
+    {file = "Nuitka-2.4.11.tar.gz", hash = "sha256:f2499361b09727cd2e96307106ed88d67cef09d527ff1857bfec8c2d1c9ff38a"},
 ]
 
 [package.dependencies]
@@ -1047,4 +1047,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "<3.13,>=3.8"
-content-hash = "e6051731c56f3d977c237f66e31adc08fe36ea8f2a995d697cb2dd26bd62e8f6"
+content-hash = "80199dc72944c2e36aba08cfb4523fcb7e694c162ad4cb47f981dee04260330b"
