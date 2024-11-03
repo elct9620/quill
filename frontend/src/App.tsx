@@ -1,7 +1,7 @@
-import { SidebarProvider } from '@/components/ui/sidebar'
-import { Outlet } from 'react-router-dom'
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { Outlet } from "react-router-dom";
 
-import AppSidebar from '@/components/AppSidebar.tsx'
+import AppSidebar from "@/components/AppSidebar.tsx";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         </main>
       </SidebarProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
