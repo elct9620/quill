@@ -1,23 +1,16 @@
-import { SidebarProvider, Sidebar, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from '@/components/ui/sidebar'
+import { SidebarProvider } from '@/components/ui/sidebar'
+import { Outlet } from 'react-router-dom'
+
+import AppSidebar from '@/components/AppSidebar.tsx'
 
 function App() {
   return (
     <>
       <SidebarProvider>
-        <Sidebar>
-          <SidebarContent>
-            <SidebarGroup>
-              <SidebarGroupLabel>Portfolio</SidebarGroupLabel>
-              <SidebarMenu>
-                <SidebarMenuItem>
-                  <SidebarMenuButton asChild>
-                    <a>Dashboard</a>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </SidebarMenu>
-            </SidebarGroup>
-          </SidebarContent>
-        </Sidebar>
+        <AppSidebar />
+        <main>
+          <Outlet />
+        </main>
       </SidebarProvider>
     </>
   )

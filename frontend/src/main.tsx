@@ -6,12 +6,14 @@ import {
 } from "react-router-dom";
 
 import './index.css'
+import { routes } from './routes.tsx'
 import App from './App.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    children: routes,
   }
 ])
 
