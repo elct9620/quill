@@ -10,7 +10,10 @@ build-frontend:
 	npm run build -ws
 
 build: build-frontend
-	poetry run nuitka Quill.py --standalone
+	poetry run nuitka Quill.py --debug
+
+debug:
+	poetry run nuitka Quill.py --run --debugger
 
 clean:
 	rm -rf Quill.dist
