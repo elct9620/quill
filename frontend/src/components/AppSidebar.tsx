@@ -7,7 +7,7 @@ import {
   SidebarMenuItem,
   SidebarMenuButton,
 } from "@/components/ui/sidebar";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function AppSidebar() {
   return (

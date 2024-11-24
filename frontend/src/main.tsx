@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 
 import "./index.css";
 import { routes } from "./routes.tsx";
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: routes,
   },
-]);
+], {
+  future: {
+    v7_relativeSplatPath: true,
+  }
+});
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
